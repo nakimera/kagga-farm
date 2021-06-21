@@ -1,8 +1,9 @@
 import React from 'react';
+import { Banner } from '../common/banner';
 
 export function Home(){
     return(
-        <h1>User home page</h1>
+        <Banner title='Home' orders />
     )
 }
 

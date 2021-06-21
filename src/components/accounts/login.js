@@ -1,8 +1,13 @@
 import React from 'react';
+import { BottomWrapper } from '../common';
+import { Banner } from '../common/banner';
 
 export function Login(){
     return(
-        <h1>Login page</h1>
+        <>
+            <Banner title='user login' />
+            <BottomWrapper height='70%'></BottomWrapper>
+        </>
     )
 }
 
