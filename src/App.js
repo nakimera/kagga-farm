@@ -1,11 +1,29 @@
-import logo from './logo.svg';
 import './App.css';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route
+} from "react-router-dom";
+
+import LandingPage from './components/accounts';
+import Signup from './components/accounts/signup';
+import Home from './components/orders/index';
 
 function App() {
   return (
-    <div className="App">
-      Kagga farm
-    </div>
+    <Router>
+      <Switch>
+        <Route exact path="/">
+            <LandingPage />
+        </Route>
+        <Route exact path="/signup">
+            <Signup />
+        </Route>
+        <Route exact path="/omuguzi">
+            <Home />
+        </Route>
+      </Switch>
+    </Router>
   );
 }
 
