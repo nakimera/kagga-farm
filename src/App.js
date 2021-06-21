@@ -7,6 +7,7 @@ import {
 
 import LandingPage from './components/accounts';
 import Signup from './components/accounts/signup';
+import Login from './components/accounts/login';
 import Home from './components/orders/index';
 
 function App() {
@@ -18,6 +19,9 @@ function App() {
         </Route>
         <Route exact path="/signup">
             <Signup />
+        </Route>
+        <Route exact path="/login">
+            <Login />
         </Route>
         <Route exact path="/omuguzi">
             <Home />
