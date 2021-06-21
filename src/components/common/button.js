@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Button = styled.button`
     height: 50px;
-    width: 88%;
+    width: 100%;
     background: ${props => props.secondary ? '#EF233C' : 'white'};
     border: none;
     text-transform: uppercase;

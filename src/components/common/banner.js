@@ -42,6 +42,10 @@ export const Banner = (props) => {
         height: ${props.orders ? '65%' : ''};
         width: ${props.landing ? '100%' : 'calc(100% - 60px)'};
         text-align: ${props.landing ? 'center' : ''};
+
+        @media only screen and (min-width: 768px){
+            align-items: center;
+        }
     `
 
     const PageTitle = styled.span`

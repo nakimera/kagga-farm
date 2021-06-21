@@ -1,4 +1,3 @@
-import React from 'react';
 import styled from 'styled-components';
 
 export const BottomWrapper = styled.div`
@@ -16,5 +15,11 @@ export const BottomWrapper = styled.div`
     a{
         width: 100%;
     }
-`
 
+    @media only screen and (min-width: 768px){
+        align-items: center;
+        a{
+            width: unset;
+        }
+    }
+`
