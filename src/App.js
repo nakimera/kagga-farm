@@ -9,6 +9,7 @@ import LandingPage from './components';
 import Signup from './components/accounts/signup';
 import Login from './components/accounts/login';
 import Home from './components/orders/index';
+import PlaceOrder from './components/orders/order';
 
 function App() {
   return (
@@ -25,6 +26,9 @@ function App() {
         </Route>
         <Route exact path="/omuguzi">
             <Home />
+        </Route>
+        <Route exact path="/order">
+            <PlaceOrder />
         </Route>
       </Switch>
     </Router>

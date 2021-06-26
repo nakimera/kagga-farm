@@ -4,22 +4,23 @@ import styled from 'styled-components';
 const Label = styled.span`
     font-size: 18px;
     text-transform: capitalize;
-    color: white;
-    font-weight: 300;
+    font-weight: 400;
+    color: rgba(0,0,0,0.7);
 `
 
-const Input = styled.input`
+const Select = styled.select`
     height: 50px;
     width: 100%;
     margin-top: 7px;
-    background: rgba(256,256,256,0.75);
-    border: 0;
+    border: solid 1px #000000;
     border-radius: 5px;
     padding-left: 8px;
     font-size: 16px;
 `
 
-export const InputField = (props) =>  {
+export const DropDown = (props) =>  {
+
+    const { options } = props;
 
     const Wrapper = styled.div`
         margin-top: ${props.mt ? props.mt : ' 10px'};
@@ -33,7 +34,13 @@ export const InputField = (props) =>  {
     return (
     <Wrapper>
         <Label>{props.label}</Label>
-        <Input></Input>
+        <Select>
+            {options.map((option => {
+                return <option value={option}>{option}</option>
+            }))}
+        </Select>
     </Wrapper>
 )
 }
+
+export default DropDown;

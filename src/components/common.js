@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const BottomWrapper = styled.div`
-    background: #000000;
+    background: ${props => props.orders ? '' : '#000000'};
     height: ${props => props.height};
     text-align: ${props => props.center ? 'center' : ''};
     color: white;
