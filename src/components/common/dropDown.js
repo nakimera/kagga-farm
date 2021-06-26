@@ -9,13 +9,14 @@ const Label = styled.span`
 `
 
 const Select = styled.select`
-    height: 50px;
-    width: 100%;
+    height: ${props => props.height ? props.height : '50px'};
+    width: ${props => props.width ? props.width : '100%'};
     margin-top: 7px;
     border: solid 1px #000000;
     border-radius: 5px;
     padding-left: 8px;
     font-size: 16px;
+    cursor: pointer;
 `
 
 export const DropDown = (props) =>  {
@@ -25,6 +26,7 @@ export const DropDown = (props) =>  {
     const Wrapper = styled.div`
         margin-top: ${props.mt ? props.mt : ' 10px'};
         margin-bottom: 15px;
+        margin-right: ${props.mr};
 
         @media only screen and (min-width: 768px){
             width: 400px;
@@ -33,8 +35,8 @@ export const DropDown = (props) =>  {
 
     return (
     <Wrapper>
-        <Label>{props.label}</Label>
-        <Select>
+        {props.label ? <Label>{props.label}</Label> : ''}
+        <Select width={props.width} height={props.height}>
             {options.map((option => {
                 return <option value={option}>{option}</option>
             }))}
