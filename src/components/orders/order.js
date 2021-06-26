@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 import { Banner } from '../common/banner';
-import { OrderButton } from './index';
+import { ButtonFixedBottom } from './index';
 import { BottomWrapper } from '../common';
 import { Button } from '../common/button';
 import { DropDown } from '../common/dropDown';
@@ -27,7 +27,7 @@ export function PlaceOrder(){
                 <Button secondary>place order</Button>
             </BottomWrapper>
             <Link to='/omuguzi'>
-                <OrderButton tertiary>back to home</OrderButton>
+                <ButtonFixedBottom tertiary>back to home</ButtonFixedBottom>
             </Link>
         </>
     )
