@@ -55,10 +55,10 @@ export function Home(){
         {noOfTrays: 12, amount: '125,000', date: '2 days ago'},
         {noOfTrays: 5, amount: '30,000', date: 'A week ago'},
         {noOfTrays: 6, amount: '35,000', date: 'Last Month'},
-        {noOfTrays: 5, amount: '30,000', date: 'Today'},
-        {noOfTrays: 12, amount: '125,000', date: '2 days ago'},
-        {noOfTrays: 5, amount: '30,000', date: 'A week ago'},
-        {noOfTrays: 6, amount: '35,000', date: 'Last Month'},
+        {noOfTrays: 5, amount: '30,000', date: 'Last Month'},
+        {noOfTrays: 12, amount: '125,000', date: '2 Months ago'},
+        {noOfTrays: 5, amount: '30,000', date: '5 months ago'},
+        {noOfTrays: 6, amount: '35,000', date: 'A year ago'},
     ]
 
     return(
