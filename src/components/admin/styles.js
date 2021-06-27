@@ -23,6 +23,7 @@ export const Column = styled.div`
 
     div{
         width: ${props => props.rows ? `calc(100% / ${props.rows})` : ''};
+        color: ${props => props.status === 'cancelled' ? 'red' : props.status === 'pending' ? 'rgba(0,0,0,0.35)' : ''};
     }
 `
 
