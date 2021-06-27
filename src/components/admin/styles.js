@@ -30,10 +30,18 @@ export const Column = styled.div`
 export const TopBar = styled(Column)`
     padding: 10px 0;
     border-bottom: solid 1px rgba(0,0,0,0.1);
+    position: fixed;
+    top: 0;
+    width: 80%;
+    background: white;
 
     div{
         display: inline;
     }
+`
+
+export const ListWrapper = styled.div`
+    margin-top: 70px;
 `
 
 export const ListColumn = styled(Column)`

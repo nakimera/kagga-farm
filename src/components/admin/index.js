@@ -1,5 +1,5 @@
 import React from 'react';
-import { MainWrapper, RightWrapper, Banner, TopBar, ListColumn } from './styles';
+import { MainWrapper, RightWrapper, Banner, TopBar, ListWrapper, ListColumn } from './styles';
 import { DropDown} from '../common/dropDown';
 
 export function AdminPanel(){
@@ -36,31 +36,30 @@ export function AdminPanel(){
                         <DropDown options={filters} width='150px' height='35px' mr='30px' />
                     </div>
                 </TopBar>
-                <ListColumn rows='7' title>
-                    <div>Order Number</div>
-                    <div>No of Trays</div>
-                    <div>Amount(UGX)</div>
-                    <div>Date</div>
-                    <div>Contact</div>
-                    <div>Location</div>
-                    <div>Status</div>
-                </ListColumn>
-                {orders.map((order, index) => {
-                    return(
-                        <ListColumn rows='7' status={order.status}>
-                            <div>{order.orderNo}</div>
-                            <div>{order.noOfTrays}</div>
-                            <div>{order.amount}</div>
-                            <div>{order.date}</div>
-                            <div>{order.contact}</div>
-                            <div>{order.location}</div>
-                            <div>{order.status}{order.status === 'pending' ? ' ...' : ''}</div>
-                        </ListColumn>
-                    )
-                })}
-
-
-                
+                <ListWrapper>
+                    <ListColumn rows='7' title>
+                        <div>Order Number</div>
+                        <div>No of Trays</div>
+                        <div>Amount(UGX)</div>
+                        <div>Date</div>
+                        <div>Contact</div>
+                        <div>Location</div>
+                        <div>Status</div>
+                    </ListColumn>
+                    {orders.map((order, index) => {
+                        return(
+                            <ListColumn rows='7' status={order.status}>
+                                <div>{order.orderNo}</div>
+                                <div>{order.noOfTrays}</div>
+                                <div>{order.amount}</div>
+                                <div>{order.date}</div>
+                                <div>{order.contact}</div>
+                                <div>{order.location}</div>
+                                <div>{order.status}{order.status === 'pending' ? ' ...' : ''}</div>
+                            </ListColumn>
+                        )
+                    })}
+            </ListWrapper>
             </RightWrapper>            
         </MainWrapper>
     )
