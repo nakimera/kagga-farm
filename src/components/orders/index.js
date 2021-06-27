@@ -16,6 +16,7 @@ export const ButtonFixedBottom = styled(Button)`
 `
 
 const Heading = styled.div`
+    margin-top: 20px;
     padding: 30px 0 25px 0;
     color: black;
     text-transform: uppercase;
