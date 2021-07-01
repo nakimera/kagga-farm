@@ -8,11 +8,6 @@ import { Wrapper } from './order';
 
 const BottomWrapper = styled(Wrapper)`
     padding: 40px 30px 60px 30px;
-
-    span{
-        padding-bottom: 30px;
-        margin-top: -10px;
-    }
 `
 
 const Heading = styled.div`
@@ -20,6 +15,10 @@ const Heading = styled.div`
     font-size: 16px;
     font-weight: bold;
     padding-bottom: 10px;
+`
+
+const SubHeading = styled.div`
+    margin-bottom: 20px;
 `
 
 const Column = styled.div`
@@ -59,7 +58,7 @@ export function Checkout(){
 
     return(
         <>
-            <Banner title='Checkout' />
+            <Banner title='Checkout' height='20vh' smaller />
             <BottomWrapper>
                 <Heading>Receipt</Heading>
                 <Column>
@@ -79,7 +78,7 @@ export function Checkout(){
                     <div>UGX100,000</div>
                 </TotalColum>
                 <Heading>Payment method</Heading>
-                <span>Choose a payment method</span>
+                <SubHeading>Choose a payment method</SubHeading>
                 <PaymentOption>
                     <div>Airtel Money</div>
                     <input type="radio" checked="checked" name="radio"></input>

@@ -37,7 +37,7 @@ export const Banner = (props) => {
         z-index: 2;
         display: flex;
         flex-direction: column;
-        padding: ${props.landing ? '' : '30px'};
+        padding: ${props.landing ? '' : props.smaller ? '20px 30px' : '30px'};
         width: ${props.landing ? '100%' : 'calc(100% - 60px)'};
         text-align: ${props.landing ? 'center' : ''};
 
