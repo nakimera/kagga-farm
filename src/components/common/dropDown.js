@@ -36,9 +36,9 @@ export const DropDown = (props) =>  {
     return (
     <Wrapper>
         {props.label ? <Label>{props.label}</Label> : ''}
-        <Select width={props.width} height={props.height}>
+        <Select width={props.width} height={props.height} onChange={props.onChange}>
             {options.map((option => {
-                return <option value={option}>{option}</option>
+                return <option value={option} key={option}>{option}</option>
             }))}
         </Select>
     </Wrapper>
