@@ -58,7 +58,7 @@ export function Checkout(){
 
     return(
         <>
-            <Banner title='Checkout' height='20vh' smaller />
+            <Banner title='Checkout' height='15vh' smaller />
             <BottomWrapper>
                 <Heading>Receipt</Heading>
                 <Column>

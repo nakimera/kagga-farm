@@ -37,25 +37,26 @@ export const Banner = (props) => {
         z-index: 2;
         display: flex;
         flex-direction: column;
-        padding: ${props.landing ? '' : props.smaller ? '20px 30px' : '30px'};
-        width: ${props.landing ? '100%' : 'calc(100% - 60px)'};
+        padding: ${props.landing ? '' : props.smaller ? '0px 30px 10px 30px' : '30px'};
+        width: ${props.landing ? '100%' : props.smaller ? '70%': 'calc(100% - 60px)'};
         text-align: ${props.landing ? 'center' : ''};
 
         @media only screen and (min-width: 768px){
             align-items: center;
+            width: 100%;
         }
     `
 
     const PageTitle = styled.span`
         color: #EF233C;
-        font-size: 22px;
+        font-size:  ${props.smaller ? '18px' : '22px'};
         font-weight: 600;
         text-transform: capitalize;
-        margin-top: 10px;
+        margin-top:  ${props.smaller ? '4px' : '10px'};
     `
 
     const Header = styled.text`
-        font-size: ${props.smaller ? '36px' : '40px'};
+        font-size: ${props.smaller ? '24px' : '40px'};
         font-weight: 800;
         text-align: ${props.center ? 'center' : ''};
         color: white;
