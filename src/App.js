@@ -10,6 +10,7 @@ import Signup from './components/accounts/signup';
 import Login from './components/accounts/login';
 import Home from './components/orders/index';
 import PlaceOrder from './components/orders/order';
+import Checkout from './components/orders/checkout';
 import AdminPanel from './components/admin';
 
 function App() {
@@ -30,6 +31,9 @@ function App() {
         </Route>
         <Route exact path="/order">
             <PlaceOrder />
+        </Route>
+        <Route exact path="/checkout">
+            <Checkout />
         </Route>
         <Route exact path="/admin">
             <AdminPanel />

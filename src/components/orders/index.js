@@ -64,7 +64,7 @@ export function Home(){
 
     return(
         <>
-            <Banner title='Home' orders />
+            <Banner title='Home' />
             <BottomWrapper orders height='70%'>
                 <Heading>my recent orders</Heading>
                 {orders.map((order, index) => {

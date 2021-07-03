@@ -13,7 +13,7 @@ export function Signup(){
             <BottomWrapper>
                 <InputField label='client name' mt='70px' />
                 <InputField label='phone number' />
-                <Link to='/omuguzi'>
+                <Link to='/login'>
                     <Button secondary>create account</Button>
                 </Link>
                 <Link to='/login'>
