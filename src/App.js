@@ -5,7 +5,7 @@ import {
   Route
 } from "react-router-dom";
 
-import LandingPage from './components';
+import LandingPage from './components/landing';
 import Signup from './components/accounts/signup';
 import Login from './components/accounts/login';
 import Home from './components/orders/index';

@@ -48,7 +48,7 @@ export const Banner = (props) => {
     `
 
     const PageTitle = styled.span`
-        color: #EF233C;
+        color: #FDC500;
         font-size:  ${props.smaller ? '18px' : '22px'};
         font-weight: 600;
         text-transform: capitalize;
