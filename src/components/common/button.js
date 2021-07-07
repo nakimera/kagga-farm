@@ -16,6 +16,5 @@ export const Button = styled.button`
 
     @media only screen and (min-width: 768px){
         width: 400px;
-        font-weight: 200;
     }
 `

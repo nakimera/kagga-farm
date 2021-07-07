@@ -37,9 +37,9 @@ export const Banner = (props) => {
         z-index: 2;
         display: flex;
         flex-direction: column;
-        padding: ${props.landing ? '' : props.smaller ? '0px 30px 20px 30px' : '30px'};
-        width: ${props.landing ? '100%' : 'calc(100% - 60px)'};
-        text-align: ${props.landing ? 'center' : ''};
+        text-align: center;
+        width: 100%;
+        margin-bottom: 20px;
 
         @media only screen and (min-width: 768px){
             align-items: center;
@@ -60,7 +60,7 @@ export const Banner = (props) => {
         font-weight: 800;
         text-align: ${props.center ? 'center' : ''};
         color: white;
-        text-align: ${props.landing ? 'center' : ''};
+        text-align: center;
     `
 
     return (

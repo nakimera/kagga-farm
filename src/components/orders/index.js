@@ -19,6 +19,15 @@ export const ButtonFixedBottom = styled(Button)`
     }
 `
 
+const Container = styled.div`
+    margin: 0 30px;
+    
+    @media only screen and (min-width: 768px){
+        align-items: center;
+        width: calc(100% - 60px);
+    }
+`
+
 const Heading = styled.div`
     margin-top: 20px;
     padding: 30px 0 25px 0;
@@ -70,18 +79,20 @@ export function Home(){
         <>
             <Banner title='Home' />
             <BottomWrapper orders height='70%'>
-                <Heading>my recent orders</Heading>
-                {orders.map((order, index) => {
-                    return(
-                        <ListItem key={index} noOfOrders={orders.length}>
-                            <div>
-                                <h3>{order.amount} UGX</h3>
-                                <span>{order.noOfTrays} Trays</span>
-                            </div>
-                            <span>{order.date}</span>
-                        </ListItem>
-                    )
-                })}
+                <Container>
+                    <Heading>my recent orders</Heading>
+                    {orders.map((order, index) => {
+                        return(
+                            <ListItem key={index} noOfOrders={orders.length}>
+                                <div>
+                                    <h3>{order.amount} UGX</h3>
+                                    <span>{order.noOfTrays} Trays</span>
+                                </div>
+                                <span>{order.date}</span>
+                            </ListItem>
+                        )
+                    })}
+                </Container>
             </BottomWrapper>
             <Link to='/order'>
                 <ButtonFixedBottom secondary>Place Order</ButtonFixedBottom>
