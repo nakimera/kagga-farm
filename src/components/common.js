@@ -9,8 +9,7 @@ export const BottomWrapper = styled.div`
     bottom: 0;
     display: flex;
     flex-direction: column;
-    width: calc(100% - 60px);
-    padding: 0 30px;
+    width: 100%;
 
     a{
         width: 100%;

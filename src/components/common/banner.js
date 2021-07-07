@@ -10,7 +10,7 @@ const BannerImage = () => {
     `
 
     return(
-        <Image src={BgImage} />
+        <Image src={BgImage} alt='image' />
     )
 }
 
@@ -37,9 +37,9 @@ export const Banner = (props) => {
         z-index: 2;
         display: flex;
         flex-direction: column;
-        padding: ${props.landing ? '' : props.smaller ? '0px 30px 20px 30px' : '30px'};
-        width: ${props.landing ? '100%' : 'calc(100% - 60px)'};
-        text-align: ${props.landing ? 'center' : ''};
+        text-align: center;
+        width: 100%;
+        margin-bottom: 20px;
 
         @media only screen and (min-width: 768px){
             align-items: center;
@@ -48,19 +48,19 @@ export const Banner = (props) => {
     `
 
     const PageTitle = styled.span`
-        color: #EF233C;
+        color: #FDC500;
         font-size:  ${props.smaller ? '18px' : '22px'};
         font-weight: 600;
         text-transform: capitalize;
         margin-top:  ${props.smaller ? '4px' : '10px'};
     `
 
-    const Header = styled.text`
+    const Header = styled.span`
         font-size: ${props.smaller ? '24px' : '40px'};
         font-weight: 800;
         text-align: ${props.center ? 'center' : ''};
         color: white;
-        text-align: ${props.landing ? 'center' : ''};
+        text-align: center;
     `
 
     return (

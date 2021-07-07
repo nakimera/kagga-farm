@@ -92,11 +92,14 @@ export function Checkout(){
                     <input type="radio" name="radio"></input>
                 </PaymentOption>
                 <Link to='/omuguzi'>
-                    <Button mt='20px' secondary>make payment</Button>
+                    <Button mt='20px' mb='30px' secondary>make payment</Button>
                 </Link>
+                <span>
+                    <b>Note: </b>Goods sold cannot be returned
+                </span>
             </BottomWrapper>
             <Link to='/order'>
-                <ButtonFixedBottom tertiary>back</ButtonFixedBottom>
+                <ButtonFixedBottom tertiary unset>back</ButtonFixedBottom>
             </Link>
         </>
     )

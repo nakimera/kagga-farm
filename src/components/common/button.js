@@ -3,14 +3,14 @@ import styled from 'styled-components';
 export const Button = styled.button`
     height: 50px;
     width: 100%;
-    background: ${props => props.secondary ? '#EF233C' : 'white'};
+    background: ${props => props.secondary ? '#FDC500' : 'white'};
     border: none;
     text-transform: uppercase;
-    color: ${props => props.secondary ? 'white' : '#EF233C'};;
+    color: ${props => props.secondary ? 'black' : '#FDC500'};
     border-radius: 10px;
     font-size: 15px;
-    font-weight: 200;
-    margin-bottom: 10px;
+    font-weight: 400;
+    margin-bottom: ${props => props.mb ? props.mb : '10px'};
     cursor: pointer;
     margin-top: ${props => props.mt};
 
