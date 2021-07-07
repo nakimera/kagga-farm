@@ -9,12 +9,13 @@ export const Button = styled.button`
     color: ${props => props.secondary ? 'black' : '#FDC500'};
     border-radius: 10px;
     font-size: 15px;
-    font-weight: 200;
+    font-weight: 400;
     margin-bottom: ${props => props.mb ? props.mb : '10px'};
     cursor: pointer;
     margin-top: ${props => props.mt};
 
     @media only screen and (min-width: 768px){
         width: 400px;
+        font-weight: 200;
     }
 `

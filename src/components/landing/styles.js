@@ -29,7 +29,7 @@ export const Overlay = styled.div`
     z-index: 1;
     position: absolute;
     top: 0;
-    background: rgba(0,0,0,0.85);
+    background: rgba(0,0,0,0.7);
 `
 
 export const MiddleContainer = styled.div`
