@@ -5,10 +5,16 @@ import { Banner } from '../common/banner';
 import { ButtonFixedBottom } from './index';
 import { Button } from '../common/button';
 import { DropDown } from '../common/dropDown';
+import { InputField } from '../common/textInput';
 
 export const Wrapper = styled.div`
     color: black;
     padding: 20px 30px 60px 30px;
+
+    span{
+        color: rgba(0,0,0,0.5);
+        line-height: 1.5;
+    }
 
     @media only screen and (min-width: 768px){
         display: flex;
@@ -39,33 +45,48 @@ const PriceTag = styled.div`
     }
 `
 
+const CheckBox = styled.div`
+    margin-bottom: 25px;
+    margin-top: 10px;
+
+    label{
+        margin-left: 5px;
+        font-size: 18px;
+        color: rgba(0,0,0,0.5);
+    }
+`
+
 export function PlaceOrder(){
     const priceTag = 7500;
-    const NoOfTraysOptions = [0,5,10,15,20,25,30,35];
     const LocationOptions = ['Kisasi', 'Kulambiro', 'Mengo', 'Najjera'];
-    const [selectedNumberOfTrays, setSelectedNumberOfTrays] = useState(0);
+    const [numberOfTrays, setNumberOfTrays] = useState('');
       
     return(
         <>
             <Banner title='Order' />
             <Wrapper orders>
-                <PriceLabel>UGX {selectedNumberOfTrays * priceTag}</PriceLabel>
-                <DropDown 
-                    mt='40px' 
-                    label='Select Number of Trays' 
-                    options={NoOfTraysOptions} 
-                    value={selectedNumberOfTrays}
-                    onChange={e => setSelectedNumberOfTrays(e.target.value)}
+                <PriceLabel>UGX {numberOfTrays * priceTag}</PriceLabel>
+                <InputField dark
+                    label='Number of Trays' 
+                    // value = {numberOfTrays}
+                    // handleChange={(e) => setNumberOfTrays(e.target.value)}
                 />
                 <PriceTag>UGX {priceTag} a Tray</PriceTag>
                 <DropDown
-                    mt='30px'
+                    mt='25px'
                     label='Select Location' 
                     options={LocationOptions}
                 />
+                <CheckBox>
+                    <input type="checkbox" id="hasTrays" name="hasTrays" value="no" />
+                    <label for="hasTrays"> Add empty trays to my order</label>
+                </CheckBox>
                 <Link to='/checkout'>
-                    <Button secondary>checkout</Button>
+                    <Button secondary  mb='20px'>checkout</Button>
                 </Link>
+                <span>
+                    <b>Note: </b>All purchased empty trays will be charged at <b>UGX2,000</b> each
+                </span>
             </Wrapper>
             <Link to='/omuguzi'>
                 <ButtonFixedBottom tertiary>back to home</ButtonFixedBottom>

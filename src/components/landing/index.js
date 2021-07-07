@@ -19,7 +19,7 @@ export function LandingPage(){
     return(
         <MainWrapper>
             <Banner>
-                <Image src={BgImage} />
+                <Image src={BgImage} alt='image' />
                 <Overlay />
                 <TopBar>
                     <span>about us</span>

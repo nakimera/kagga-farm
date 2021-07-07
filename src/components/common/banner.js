@@ -10,7 +10,7 @@ const BannerImage = () => {
     `
 
     return(
-        <Image src={BgImage} />
+        <Image src={BgImage} alt='image' />
     )
 }
 
@@ -55,7 +55,7 @@ export const Banner = (props) => {
         margin-top:  ${props.smaller ? '4px' : '10px'};
     `
 
-    const Header = styled.text`
+    const Header = styled.span`
         font-size: ${props.smaller ? '24px' : '40px'};
         font-weight: 800;
         text-align: ${props.center ? 'center' : ''};

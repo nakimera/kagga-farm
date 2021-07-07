@@ -100,7 +100,7 @@ export const Banner = () => {
         margin-top: 10px;
     `
 
-    const Header = styled.text`
+    const Header = styled.span`
         font-size: 36px;
         font-weight: 800;
         color: white;
