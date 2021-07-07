@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Link } from "react-router-dom";
 import styled from 'styled-components';
 import { Banner } from '../common/banner';
@@ -57,6 +57,10 @@ const CheckBox = styled.div`
         margin-left: 5px;
         font-size: 18px;
         color: rgba(0,0,0,0.5);
+    }
+
+    @media only screen and (min-width: 768px){
+        width: 400px;
     }
 `
 
