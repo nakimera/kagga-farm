@@ -13,6 +13,10 @@ export const ButtonFixedBottom = styled(Button)`
     margin-bottom: 0;
     background: ${props => props.tertiary ? 'rgba(0,0,0,0.08)' : ''};
     color: ${props => props.tertiary ? 'rgba(0,0,0,0.65)' : ''};
+
+    @media only screen and (max-height: 670px){
+        position: ${props => props.unset ? 'unset' : 'fixed'};
+    }
 `
 
 const Heading = styled.div`

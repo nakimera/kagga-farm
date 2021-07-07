@@ -6,6 +6,8 @@ export const InputField = (props) =>  {
     const Wrapper = styled.div`
         margin-top: ${props.mt ? props.mt : ' 10px'};
         margin-bottom: 15px;
+        display: flex;
+        flex-direction: column;
 
         @media only screen and (min-width: 768px){
             width: 400px;
@@ -20,12 +22,10 @@ export const InputField = (props) =>  {
     `
 
     const Input = styled.input`
-        height: 50px;
-        width: 100%;
+        height: 45px;
         margin-top: 7px;
         border: 0;
         border-radius: 5px;
-        padding-left: 8px;
         font-size: 16px;
         border: solid 1px black;
     `

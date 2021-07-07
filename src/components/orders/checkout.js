@@ -99,7 +99,7 @@ export function Checkout(){
                 </span>
             </BottomWrapper>
             <Link to='/order'>
-                <ButtonFixedBottom tertiary>back</ButtonFixedBottom>
+                <ButtonFixedBottom tertiary unset>back</ButtonFixedBottom>
             </Link>
         </>
     )

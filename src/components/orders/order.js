@@ -72,7 +72,7 @@ export function PlaceOrder(){
       
     return(
         <>
-            <Banner title='Order' />
+            <Banner title='Order' height='15vh' smaller />
             <Wrapper orders>
                 <PriceLabel>UGX {numberOfTrays * priceTag}</PriceLabel>
                 <InputField dark
