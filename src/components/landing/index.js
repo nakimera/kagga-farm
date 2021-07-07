@@ -38,7 +38,7 @@ export function LandingPage(){
                 <AboutUsSection>
                     <h2>About Us</h2>
                     <div className='container'>
-                        <img src={Trays} />
+                        <img src={Trays} alt='image' />
                         <div>
                             <h3>It's good you asked</h3>
                             <p>

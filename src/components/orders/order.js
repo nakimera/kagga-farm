@@ -21,6 +21,10 @@ export const Wrapper = styled.div`
         justify-content: center;
         flex-direction: column;
         align-items: center;
+
+        span{
+            width: 400px;
+        }
     }
 `
 
@@ -58,8 +62,9 @@ const CheckBox = styled.div`
 
 export function PlaceOrder(){
     const priceTag = 7500;
+    const numberOfTrays = 0;
     const LocationOptions = ['Kisasi', 'Kulambiro', 'Mengo', 'Najjera'];
-    const [numberOfTrays, setNumberOfTrays] = useState('');
+    // const [numberOfTrays, setNumberOfTrays] = useState('');
       
     return(
         <>
