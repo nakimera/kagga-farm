@@ -12,6 +12,7 @@ export const Button = styled.button`
     font-weight: 200;
     margin-bottom: 10px;
     cursor: pointer;
+    margin-top: ${props => props.mt};
 
     @media only screen and (min-width: 768px){
         width: 400px;

@@ -1,5 +1,6 @@
 const firebase = require("firebase");
 require("firebase/firestore");
+const firebaseui = require('firebaseui');
 
 // Initialize Cloud Firestore through Firebase
 firebase.initializeApp({

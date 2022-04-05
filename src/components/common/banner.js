@@ -19,7 +19,7 @@ export const Banner = (props) => {
     const Wrapper = styled.div`
         width: 100%;
         position: relative;
-        height: ${props.height ? props.height : '30vh'};
+        height: ${props.height ? props.height : props.landing ? '40vh' : '30vh'};
     `
 
     const Gradient = styled.div`

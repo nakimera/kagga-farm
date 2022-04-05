@@ -10,7 +10,7 @@ export function Signup(){
     return(
         <>
             <Banner title='create account' />
-            <BottomWrapper height='70%'>
+            <BottomWrapper>
                 <InputField label='client name' mt='70px' />
                 <InputField label='phone number' />
                 <Link to='/omuguzi'>
